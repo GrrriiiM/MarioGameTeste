@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<script type="text/javascript" src="jquery-1.7.2.min.js" ></script>
+	<script type="text/javascript" src="Base.js" ></script>
+	<script type="text/javascript" src="Shape.js" ></script>
+	<script type="text/javascript" src="Container.js" ></script>
+	<script type="text/javascript" src="Drawer.js" ></script>
+	<script type="text/javascript" src="CSSDrawer.js" ></script>
+    <script type="text/javascript">
+		$(function () {
+			var shape1 = new Shape("shape1", {
+				color: "red",
+				width: 20,
+				height: 40
+			});
+			
+			var shape2 = new Shape("shape2", {
+				top: 400,
+				left: 0,
+				width: 500,
+				height: 20
+			});
+		
+		
+			var container = new Container("container", {
+				shapes: {
+					{shape1.id: shape1},
+					{shape2.id: shape2}
+				}
+			});
+			
+			var scenario = new Scenario({ 
+				layers: }
+					{container.id: container}
+				}
+			});
+			
+			container.drawContainer();
+			container.drawShapes();
+		});
+    </script>
+
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "GameRemote",
+  "version": "1.0.1",
+  "description": "Teste Game Remoto",
+  "main": "remote.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Allison Ferreira de Oliveira",
+  "license": "ISC",
+  "dependencies": {
+	"express": "4.0.0",
+	"formidable": "1.x",
+	"socket.io": "0.9.x"
+  }
+}
